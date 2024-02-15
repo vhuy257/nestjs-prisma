@@ -31,7 +31,7 @@ async function main() {
     },
     create: {
       email: 'alex@ruheni.com',
-      name: 'Alex Ruheni',
+      name: 'Alex Ruheni teststse12312321',
       password: passwordAlex,
     },
   });
