@@ -16,9 +16,13 @@ export class ArticlesService {
     return this.prisma.article.findMany({ where: { published: false } });
   }
 
-  findAll() {
+  findPublished() {
     //return `This action returns all articles`;
     return this.prisma.article.findMany({ where: { published: true } });
+  }
+
+  findAll() {
+    return this.prisma.article.findMany();
   }
 
   findOne(id: number) {
